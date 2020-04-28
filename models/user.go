@@ -38,7 +38,7 @@ func AddUser(u User) (User, error) {
 	return u, nil
 }
 
-//GetUserByUserName - function will retrieve specific user by it's ID
+//GetUserByUserName - function will retrieve specific user by it's UserName
 func GetUserByUserName(username string) (User, error) {
 	for _, u := range users {
 		if u.UserName == username {
